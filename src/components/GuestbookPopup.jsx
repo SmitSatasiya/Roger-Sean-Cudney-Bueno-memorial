@@ -58,7 +58,7 @@ const GuestbookPopup = ({ onClose }) => {
 
     return (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black/50">
-            <div className="relative bg-white w-[90%] md:w-[600px] max-h-[90vh] overflow-y-auto pb-[42px] pt-9 px-11 shadow-lg">
+            <div className="relative bg-white w-[90%] md:w-[600px] max-h-[90vh] overflow-y-auto pb-[42px] pt-9 px-6 md:px-11 shadow-lg">
                 <button
                     onClick={onClose}
                     className="absolute top-3 right-4 text-gray-500 hover:text-black text-xl"
@@ -77,7 +77,7 @@ const GuestbookPopup = ({ onClose }) => {
                             className="flex flex-col space-y-6 text-sm md:text-base"
                         >
                             <div>
-                                <label className="block text-[18px] font-normal text-black mb-1">
+                                <label className="block text-[15px] font-normal text-black mb-1">
                                     Name
                                 </label>
                                 <input
@@ -92,10 +92,10 @@ const GuestbookPopup = ({ onClose }) => {
                             </div>
 
                             <div>
-                                <label className="block text-[18px] font-normal text-black mb-1">
+                                <label className="block text-[15px] font-normal text-black mb-1">
                                     Email
                                 </label>
-                                <label className="block text-[16px] font-normal text-black mb-1">
+                                <label className="block text-[13px] font-normal text-black mb-1">
                                     Will not be shared publicly
                                 </label>
                                 <input
@@ -111,10 +111,10 @@ const GuestbookPopup = ({ onClose }) => {
                             </div>
 
                             <div>
-                                <label className="block text-[18px] font-normal text-black mb-1">
+                                <label className="block text-[15px] font-normal text-black mb-1">
                                     Guest book entry
                                 </label>
-                                <label className="block text-[16px] font-normal text-black mb-1">
+                                <label className="block text-[13px] font-normal text-black mb-1">
                                     Share a memory, message, or thoughts
                                 </label>
                                 <textarea
@@ -129,10 +129,10 @@ const GuestbookPopup = ({ onClose }) => {
                             </div>
 
                             <div>
-                                <label className="block text-[18px] font-normal text-black mb-1">
+                                <label className="block text-[15px] font-normal text-black mb-1">
                                     Private message (optional)
                                 </label>
-                                <label className="block text-[16px] font-normal text-black mb-1">
+                                <label className="block text-[13px] font-normal text-black mb-1">
                                     Will not be shared publicly
                                 </label>
                                 <textarea
