@@ -173,32 +173,6 @@ const HeroSection = () => {
             photographer, a luthier, a guitar player, and an excellent cook. He made the best
             cheesecake with an almond crust.
           </p>
-          <p>
-            A celebration of life followed by a reception with lunch was held at
-            Duke University in Durham, North Carolina on Saturday, April 19,
-            2025, at 10:30 am in Gross Hall 107. The program can be found{" "}
-            <a
-              href="#"
-              className="text-blue-600 underline"
-              onClick={handleOpenGuestbook}
-            >
-              Here
-            </a>
-            .
-          </p>
-
-          <p>
-            For those unable to attend in person, a recording of the service can
-            be found{" "}
-            <a
-              href="#"
-              className="text-blue-600 underline"
-              onClick={handleOpenGuestbook}
-            >
-              Here
-            </a>
-            .
-          </p>
         </div>
 
         {/* Celebration */}
