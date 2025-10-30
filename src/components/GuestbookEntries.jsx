@@ -29,7 +29,7 @@ const GuestbookEntries = ({ entries = [], onOpenForm }) => {
               className="border border-gray-300 bg-white shadow-sm rounded-[5px] p-[34px] text-left hover:shadow-md transition duration-200 cursor-pointer"
               onClick={() => setSelectedEntry(entry)}
             >
-              {/* Message preview (5-6 lines only) */}
+
               <p
                 className="text-black text-[18px] mb-6 font-normal overflow-hidden"
                 style={{
@@ -51,11 +51,11 @@ const GuestbookEntries = ({ entries = [], onOpenForm }) => {
 
       {/* Popup Modal for full message */}
       {selectedEntry && (
-        <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg shadow-lg max-w-[600px] w-full p-8 relative">
+        <div className="fixed inset-0 bg-white/20 backdrop-blur-sm flex items-center justify-center z-50 transition-all duration-300">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-[600px] w-full p-8 relative border border-white/30">
             {/* Close button */}
             <button
-              className="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl cursor-pointer"
+              className="absolute top-3 right-3 text-gray-500 hover:text-black text-2xl cursor-pointer transition-transform hover:scale-110"
               onClick={() => setSelectedEntry(null)}
             >
               &times;
@@ -65,12 +65,13 @@ const GuestbookEntries = ({ entries = [], onOpenForm }) => {
               {selectedEntry.name || "Anonymous"}
             </h2>
 
-            <p className="text-black text-[18px] font-normal whitespace-pre-wrap leading-relaxed text-left">
+            <p className="text-gray-700 text-[18px] font-normal whitespace-pre-wrap leading-relaxed text-left">
               {selectedEntry.message}
             </p>
           </div>
         </div>
       )}
+
     </div>
   );
 };
